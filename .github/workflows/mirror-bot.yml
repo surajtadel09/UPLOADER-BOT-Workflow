@@ -33,7 +33,6 @@ jobs:
       - name: Compile The Mirroring Docker Container
         run: |
           cd source || exit 1
-          pip3 install -r requirements.txt
           docker container prune --force || true
           docker build . --rm --force-rm --compress --no-cache=true --pull --file Dockerfile -t mirror-bot
           docker image ls
