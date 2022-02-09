@@ -16,7 +16,7 @@ class Config(object):
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Movie_leecher")
     
     # Log Channel ID
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "Movie_leecher"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001472211197"))
     
     # Telegram maximum file upload size
     MAX_FILE_SIZE = 50000000
